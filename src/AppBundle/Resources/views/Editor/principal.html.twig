@@ -1,0 +1,52 @@
+{% extends "AppBundle::base.html.twig" %}
+
+{% block title %}Criador de diagramas{% endblock %}
+
+{% block body %}
+
+<div class="row">
+	
+	<div class="col-md-3">
+		<h2>Ferramentas</h2>
+		<hr />
+		<button class="btn btn-default">Editar informações do processo</button>
+		<form action="#">
+			<h3>Criar departamento</h3>
+			<div class="form-group">
+				<input type="text" placeholder="Nome do departamento" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Criar departamento" class="btn btn-success">
+			</div>
+		</form>
+
+		<h3>Adicionar elemento</h3>
+		<ul class="list-group">
+		  <li class="list-group-item"><span class="badge">Working</span><a href="#">Processo</a></li>
+		  <li class="list-group-item"><a href="#">Pergunta</a></li>
+		  <li class="list-group-item"><a href="#">Risco</a></li>
+		  <li class="list-group-item"><span class="badge">Working</span><a href="#">Documento</a></li>
+		  <li class="list-group-item"><span class="badge">Working</span><a href="#">Email</a></li>
+		  <li class="list-group-item"><span class="badge">Working</span><a href="#">Sistema</a></li>
+		</ul>
+	</div>
+
+	<div class="col-md-9">
+		<div class="tela">
+			<div class="processo">
+				<h2>Titulo</h2>
+				<p class="desc">Descrição simples do projeto com algumas linhas que vai ser comum acontecer</p>
+			</div>
+			<div class="email icone">
+				<img src="/bundles/app/img/email.svg" alt="Email">
+			</div>
+			<div class="documento icone">
+				<img src="/bundles/app/img/doc.png" alt="Documento">
+			</div>
+			<div class="sistema icone">
+				<img src="/bundles/app/img/system.svg" alt="Documento">
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

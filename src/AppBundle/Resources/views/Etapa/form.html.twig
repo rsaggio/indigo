@@ -1,0 +1,75 @@
+{% extends "AppBundle::base.html.twig" %}
+
+{% block title %}AppBundle:Etapa:form{% endblock %}
+
+{% block body %}
+<div class="row">
+	<div class="col-md-10">
+		
+<h1 class="text-center">Cadastro de etapa no processo</h1>	
+<form action="{{ path('salva_etapa') }}" method="post">
+	
+	<div class="form-group">
+		<label for="">Nome da instrução</label>
+		{{ form_widget(form.nome, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+	<div class="form-group">
+		<label for="">Processo</label>
+		{{ form_widget(form.processo, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+	<div class="form-group">
+		<label for="">Departamento</label>
+		{{ form_widget(form.departamento, {'attr': {'class' : 'form-control'} }) }}
+	</div>	
+	<div class="form-group">
+		<label for="">Setor</label>
+		{{ form_widget(form.setor, {'attr': {'class' : 'form-control'} }) }}
+	</div>	
+	<div class="form-group">
+		<label for="">Código da IT</label>
+		{{ form_widget(form.codigoIt, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+	<div class="form-group">
+		<label for="">Interação</label>
+		{{ form_widget(form.interacao, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+	<div class="form-group">
+		<label for="">Detalhes</label>
+		{{ form_widget(form.detalhes, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+
+	<div class="form-group">
+		<label for="">Tempo da ação</label>
+		{{ form_widget(form.tempo, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+
+	<div class="form-group">
+		<label for="">Cor</label>
+		{{ form_widget(form.cor, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+	
+	<div class="form-group">
+		<label for="">Participante</label>
+		{{ form_widget(form.participante, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+
+	<div class="form-group">
+		<label for="">Instrução anterior</label>
+		{{ form_widget(form.anterior, {'attr': {'class' : 'form-control'} }) }}
+	</div>
+
+	<div class="form-group">
+		{{ form_widget(form.final) }}
+		<label for="">Fim do processo?</label>
+	</div>
+
+	<div class="form-group">
+		<input type="submit" value="Cadastrar" class="btn btn-primary">
+	</div>
+</form>
+
+
+</div>
+</div>
+
+{% endblock %}

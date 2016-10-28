@@ -1,0 +1,101 @@
+{% extends "AppBundle::base.html.twig" %}
+
+{% block title %}Etapas do processo{% endblock %}
+
+{% block body %}
+<h1 class="text-center">Etapas do processo: Processo1</h1>
+
+<form action="#">
+	<div class="form-group">
+		<button class="btn btn-default">Calcular tempo do processo</button>
+		<button class="btn btn-default">Calcular custo do processo</button>
+		<button class="btn btn-danger">Limpar o processo</button>
+	</div>
+</form>
+<table class="table table-stripped">
+	<thead>
+		<tr>
+			<th>Posição</th>
+			<th>Nome</th>
+			<th>Departamento</th>
+			<th>Ações</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for etapa in etapas %}
+			<tr>
+				<td>{{ etapa.id }}</td>
+				<td>{{ etapa.nome }}</td>
+				<td>{{ etapa.departamento.nome}}</td>
+				<td>
+					<a href="#" class="btn btn-link">Ver etapa</a>
+				</td>
+			</tr>
+		{% endfor %}
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Etapa 1</td>
+			<td>Departamento 1</td>
+			<td>
+				<a href="#" class="btn btn-link">Ver etapa</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% endblock %}
