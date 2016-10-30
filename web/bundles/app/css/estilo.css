@@ -1,0 +1,32 @@
+.processo {
+	border:1px solid black;
+	display:inline-block;
+	text-align:center;
+	border-radius:5px;
+	max-width:200px;
+	cursor:move;
+}
+.processo h2 {
+	padding:5px;
+	margin:0;
+	font-size:18px;
+	border-bottom:1px solid black;
+}
+.processo .desc {
+	padding:10px 5px;
+}
+.icone {
+	cursor:move;
+}
+.icone img {
+	width:64px;
+}
+.email img {
+	width:100px;
+}
+
+.login-form {
+	width:300px;
+	margin:auto;
+	margin-top:150px;
+}
